@@ -10,7 +10,7 @@ This project explores three different custom algorithms to compress sales data f
 | **Original File** | **20.1 MB** | \- | Plain text/Excel standard |
 | **Version 1** | **14.4 MB** | \~28% | Basic RLE (Run-Length Encoding) |
 | **Version 2** | **13.3 MB** | **\~34%** | Base 52 Alpha-Encoding |
-| **Version 3** | **13.3 MB** | **\~34%** | Global Pattern Tokenization |
+| **Version 3** | **12.9 MB** | **\~36%** | Global Pattern Tokenization |
 
 ------------------------------------------------------------------------
 
