@@ -7,8 +7,8 @@ from collections import Counter
 import os
 
 # --- CONFIGURATION ---
-input_path = '/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmartSales.xlsx'
-output_path = "/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmart_version3.xlsx"
+input_path = '/set/your/path/walmartSales.xlsx'
+output_path = "/set/your/path/walmart_version3.xlsx"
 
 # --- DATA LOADING ---
 try:

@@ -6,8 +6,8 @@ from openpyxl import Workbook
 import os
 
 # --- CONFIGURATION ---
-input_path = '/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmartSales.xlsx'
-output_path = "/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmart_version2.xlsx"
+input_path = '/set/your/path/walmartSales.xlsx'
+output_path = "/set/your/path/walmart_version2.xlsx"
 
 # Base 52 Mapping (a-z, A-Z)
 MAP = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

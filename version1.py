@@ -5,9 +5,9 @@ import pandas as pd
 from openpyxl import Workbook
 
 wb = Workbook(); ws = wb.active
-df = pd.read_excel('/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmartSales.xlsx', sheet_name='Walmart sales')
+df = pd.read_excel('/set/your/path/walmartSales.xlsx', sheet_name='Walmart sales')
 # Decidi dove salvare i dati
-path = "/Users/giuliacolapinto/Library/Mobile Documents/com~apple~CloudDocs/Programmazione/optimizeSpace/walmart_version1.xlsx"
+path = "/set/your/path/walmart_version1.xlsx"
 d={i[0]:i[1].split() for i in df.values}
 
 for g in d:
