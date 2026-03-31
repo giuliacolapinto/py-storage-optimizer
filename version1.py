@@ -6,14 +6,14 @@ from openpyxl import Workbook
 
 wb = Workbook(); ws = wb.active
 df = pd.read_excel('/set/your/path/walmartSales.xlsx', sheet_name='Walmart sales')
-# Decidi dove salvare i dati
+# Decide where to save the data
 path = "/set/your/path/walmart_version1.xlsx"
 d={i[0]:i[1].split() for i in df.values}
 
 for g in d:
     for k,f in enumerate(d[g]):
         d[g][k]=int(f)
-# Trasformo i numeri in lettere
+# Transform numbers into letters
 def letters(x):
     y=str(x)
     if len(y)==1: l='zabcdefghi'[int(y)]
@@ -21,7 +21,7 @@ def letters(x):
          l='';
          for i in y: l+='zabcdefghi'[int(i)]
     return l
-# Trasformo lettere in numeri
+# Transform letters back into numbers
 def InvLetters(x):
     n=''
     for i in x:
@@ -44,7 +44,7 @@ for b in d:
         elif (k-kk-1)>1 or x[kk]>9 : last+=f'{x[kk]}{letters(k-kk-1)}'
         else: last+=f'{x[kk]}'
     last=last[1:];   ws[f'A{q}'] = b;   ws[f'B{q}'] = last;q+=1
-    # Questo codice sotto verifica se riesco a tornare ai dati iniziali
+    # This code below verifies if I can return to the initial data
 c=[];g=0
 while g<len(last)-1:
         for i in range(g+1,len(last)+1):
